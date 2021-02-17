@@ -1,0 +1,54 @@
+/* .logo{
+    color: black;
+}
+
+.navbar{
+    box-sizing: border-box;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px 30px;
+}
+
+.nav-list a{
+    text-decoration: none;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li a {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 2px 30px;
+    color: #000;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.nav-list li a:hover{
+    color: crimson;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
