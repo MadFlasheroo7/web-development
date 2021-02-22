@@ -1,28 +1,10 @@
-/* .logo{
-    color: black;
-}
-
-.navbar{
-    box-sizing: border-box;
-}
-
-.nav-list{
-    display: flex;
-    align-items: center;
-}
-
-.nav-list li{
-    list-style: none;
-    padding: 20px 30px;
-}
-
-.nav-list a{
-    text-decoration: none;
-} */
-
 *{
     margin: 0px;
     padding: 0px;
+}
+
+.burger {
+    display: none;
 }
 
 .burger div {
@@ -40,9 +22,9 @@
 .nav-list li a {
     font-weight: 500;
     font-size: 16px;
-    padding: 2px 30px;
+    padding: 2px 20px;
     color: #000;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     text-decoration: none;
 }
 
@@ -59,9 +41,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin: 0px;
 }
 
+
 .logo{
+    margin: 0px;
     display: inline-flex;
     align-items: center;
 }
@@ -73,31 +58,55 @@ header {
     width: 10%;
 }
 
-@media screen and (max-width: 768px){
+.section-1 {
+    display: inline-flex;
+}
+
+.me{
+    height: 60vh;
+    position: sticky;
+}
+
+
+@media screen and (max-width: 1080px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    .nav-list{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
     .mad{
         margin-top: 10px;
     }
 
-    body{
-        overflow-y: hidden;
-    }
 
     .nav-list{
         position: absolute;
         left: 0px;
-        height: 100vh;
-        width: 60%;
+        height: 100%;
+        width: 50%;
         top: 8vh;
         display: flex;
         flex-direction: column;
-        box-shadow: 11px 30px 23px 0px rgb(187, 187, 187);
         align-items: center;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
     }
 
     .nav-list li{
-        margin: 20%;
+        margin: 35px;
+    }
+
+    .burger{
+        display: block;
     }
 
     .burger div{
@@ -109,8 +118,14 @@ header {
         border-radius: 20px;
         background-color: black;
     }
+
+    .darkModeToggle{
+        width: 45px;
+        align-self: flex-end;
+    }
 }
 
 .nav-active{
+    box-shadow: 11px 30px 23px 0px rgb(187, 187, 187);
     transform: translateX(0%);
 }
