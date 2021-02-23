@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .burger {
@@ -59,12 +62,31 @@ header {
 }
 
 .section-1 {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
-.me{
-    height: 60vh;
-    position: sticky;
+.whoami h1 {
+    font-style: normal;
+    font-size: 35px;
+    margin: 0 0 5px 0;
+}
+
+.whoami{
+    justify-content: center;
+    margin: 65px;
+    width: 50vh;
+    padding: 15%;
+}
+
+.myImage img{
+    height: 90vh;
+    margin: auto;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
 }
 
 
@@ -77,8 +99,39 @@ header {
         margin: 0px;
     }
 
+    .nav-list li a {
+        font-weight: 500;
+        font-size: 16px;
+        padding: 6px 6px;
+        color: #000;
+        transition: all 0.5s ease 0s;
+        text-decoration: none;
+    }
+
     .nav-list{
         height: 100%;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .whoami{
+        margin: auto;
+        width: 50vh;
+        padding: 15%;
+    }
+    
+    .myImage img{
+        height: 60vh;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }
 
@@ -123,9 +176,32 @@ header {
         width: 45px;
         align-self: flex-end;
     }
+
+    .section-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .whoami{
+        margin: auto;
+        width: 50vh;
+        padding: 15%;
+    }
+    
+    .myImage img{
+        height: 60vh;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
 
 .nav-active{
     box-shadow: 11px 30px 23px 0px rgb(187, 187, 187);
     transform: translateX(0%);
+    background-color: white;
 }
